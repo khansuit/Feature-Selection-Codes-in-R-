@@ -18,18 +18,18 @@ library(gitcreds)
 devtools::install_github("https://github.com/mlr-org/mlr3extralearners")
 library(mlr3extralearners)
 library(caret)
-setwd("F:/PERSONNAL1/RESEARCH WORK 2022/Empirical/Validation/1. Normalized datasets/SFP")
+setwd("F:/PERSONNAL1/RESEARCH WORK 2022/Empirical/Validation/1. Normalized datasets/SDEE")
 
-data = readARFF("Normalized Lucene.arff")
+data = readARFF("Normalized China.arff")
 
-ggplot(data=data,aes(x=rfc,y=bug))+geom_line()+labs(title="RFC")
+ggplot(data=data,aes(x=rfc,y=Effort))+geom_line()+labs(title="RFC")
 
 
 set.seed(123)
 index= sample(1:nrow(data), 0.7*nrow(data))
 train= data[index,]
 test= data[-index,]
-task = TaskRegr$new("data", backend = train, target = "bug")
+task = TaskRegr$new("data", backend = train, target = "Effort")
 
 
 learner= lrn("regr.randomForest")
@@ -41,13 +41,13 @@ library(randomForest)
 
 
 explainer = explain_mlr3(model,
-                         data = test[,-22],
-                         y = as.numeric(test$bug)-1,
+                         data = test[,-19],
+                         y = as.numeric(test$Effort)-1,
                          label="RF")
 
 
 set.seed(123)
-test[,22]
+test[,19]
 new= test[2,]
 
 library(Metrics)

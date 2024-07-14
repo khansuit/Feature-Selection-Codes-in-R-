@@ -8,10 +8,8 @@ Validation Methods: Code for 3-fold, 5-fold, Leave-One-Out (LOO), and Bootstrap 
 Consistency Measurement: Tools for calculating feature selection consistency.
 
 
-**Datasets **
-* ant: https://archive.apache.org/dist/ant/source/
-* lucene: https://github.com/apache/lucene-solr/releases
-* synapse: https://github.com/apache/synapse/releases
-* velocity: http://archive.apache.org/dist/velocity/engine/, https://github.com/apache/velocity-engine/releases
-* xalan: http://archive.apache.org/dist/xml/xalan-j/, https://github.com/apache/xalan-java/releases
-* xerces: https://svn.apache.org/repos/asf/xerces/java/tags/
+# Datasets 
+For accessing datasets search in Main branch SFP datasets and SDEE datasets. The used 12 SE datasets are available there. 
+
+# Experimental Codes
+R codes can be accessed "R codes" under the Main branch. 

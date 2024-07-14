@@ -13,3 +13,7 @@ For accessing datasets search in Main branch SFP datasets and SDEE datasets. The
 
 # Experimental Codes
 R codes can be accessed "R codes" under the Main branch. 
+
+
+# Effect size test
+Employed Statistical analysis (codes) can be accessed "Effect size test" under the Main branch.

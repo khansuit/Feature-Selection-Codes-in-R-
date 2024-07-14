@@ -6,3 +6,12 @@ Traditional FS Techniques: Examples include Linear Regression (LR) and Support V
 Dataset Modifications: Procedures for dataset augmentation and reduction.
 Validation Methods: Code for 3-fold, 5-fold, Leave-One-Out (LOO), and Bootstrap validations.
 Consistency Measurement: Tools for calculating feature selection consistency.
+
+
+**Datasets **
+* ant: https://archive.apache.org/dist/ant/source/
+* lucene: https://github.com/apache/lucene-solr/releases
+* synapse: https://github.com/apache/synapse/releases
+* velocity: http://archive.apache.org/dist/velocity/engine/, https://github.com/apache/velocity-engine/releases
+* xalan: http://archive.apache.org/dist/xml/xalan-j/, https://github.com/apache/xalan-java/releases
+* xerces: https://svn.apache.org/repos/asf/xerces/java/tags/
